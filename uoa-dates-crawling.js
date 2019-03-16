@@ -19,8 +19,8 @@ const uoaDates = async () => {
         const tbodies = Array.from(document.querySelectorAll('div.table-responsive-wrap'));
         const titles = new Array();
         for (let i = 0; i < tbodies.length; i++) {
-            if (i !== 2) { // handle undexpect data
-                titles.push(0); // to tick where to put semester title
+            if (i !== 2) { // handle undexpected data
+                titles.push(0); // to check where to put semester title
             }
             const trs = tbodies[i].querySelectorAll('table tbody tr td');
             for (let j = 0; j < trs.length; j += 2) {
